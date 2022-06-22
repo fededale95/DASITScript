@@ -17,7 +17,7 @@ echo ""
 echo "--- Configurazione Rete DASIT ---"
 echo ""
 echo "     ETH 2/4 failover  "
-echo "     IP: STATIC
+echo "     IP: STATIC        "
 echo ""
 echo "---  End Config ---"
 echo ""
