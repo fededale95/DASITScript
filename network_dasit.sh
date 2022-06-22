@@ -17,7 +17,6 @@ echo "     IP: 192.168.2.19"
 echo ""
 echo "---  End Config ---"
 echo ""
-
-curl -l https://raw.githubusercontent.com/fededale95/DASITScript/main/interfaces >interfaces_test
+curl -l https://raw.githubusercontent.com/fededale95/DASITScript/main/interfaces>'interfaces_test'
 mv interfaces_test /etc/network/
 #ifup -a
