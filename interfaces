@@ -1,0 +1,55 @@
+# you're doing.
+#
+# If you want to manage parts of the network configuration manually,
+# please utilize the 'source' or 'source-directory' directives to do
+# so.
+# PVE will preserve these directives, but will NOT read its network
+# configuration from sourced files, so do not attempt to move any of
+# the PVE managed interfaces into external files!
+
+auto lo
+iface lo inet loopback
+
+auto eno1
+iface eno1 inet manual
+
+auto eno2
+iface eno2 inet manual
+
+auto eno3
+iface eno3 inet manual
+
+auto eno4
+iface eno4 inet manual
+
+auto bond0
+iface bond0 inet manual
+        bond-slaves eno1 eno3
+        bond-miimon 100
+        bond-mode active-backup
+        bond-primary eno1
+#Rete Ospedaliera
+
+auto bond1
+iface bond1 inet manual
+        bond-slaves eno2 eno4
+        bond-miimon 100
+        bond-mode active-backup
+        bond-primary eno2
+#Rete DASIT
+
+auto vmbr0
+iface vmbr0 inet dhcp
+        bridge-ports bond0
+        bridge-stp off
+        bridge-fd 0
+#Rete Ospedale
+
+auto vmbr1
+iface vmbr1 inet static
+        address 192.168.2.19/24
+        bridge-ports bond1
+        bridge-stp off
+        bridge-fd 0
+#Rete DASIT
+
