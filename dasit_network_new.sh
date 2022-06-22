@@ -7,6 +7,7 @@ echo "Script Configurazione Network PVE DASIT - Federico Dale"
 echo ""
 curl -OL https://raw.githubusercontent.com/fededale95/DASITScript/main/interfaces
 mv interfaces /etc/network
+echo ""
 echo "--- Configurazione Rete OSPEDALIERA ---"
 echo ""
 echo "     ETH 1/3 failover  "
