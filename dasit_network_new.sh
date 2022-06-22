@@ -23,7 +23,7 @@ echo "---  End Config ---"
 echo ""
 ifup -a
 systemctl restart networking
-echo "CONFIGURAZIONE TERMINATA"
+echo "--- CONFIGURAZIONE TERMINATA ---"
 echo "IP DASIT: "
 hostname -I | awk '{print $2}'
 echo "IP OSPEDALE: "
