@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash -ex
 #Script configurazione interfacce di RETE per Proxmox PVE DASIT - Federico Dalè
 #Config Porte ETH 1 e 3 in failover per la rete OSPEDALIERA in DHCP, Porte ETH 2 e 4 failover rete DASIT ip statico 192.168.2.19
 echo "--- START ---"
