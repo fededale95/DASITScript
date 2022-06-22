@@ -1,6 +1,7 @@
 #!/bin/sh
 #Script configurazione interfacce di RETE per Proxmox PVE DASIT - Federico Dalè
 #Config Porte ETH 1 e 3 in failover per la rete OSPEDALIERA in DHCP, Porte ETH 2 e 4 failover rete DASIT ip statico 192.168.2.19
+echo "--- START ---"
 echo ""
 echo "Script Configurazione Network PVE DASIT - Federico Dale"
 echo ""
@@ -21,3 +22,10 @@ echo ""
 echo "---  End Config ---"
 echo ""
 ifup -a
+echo "CONFIGURAZIONE TERMINATA"
+echo "IP DASIT: "
+hostname -I | awk '{print $2}'
+echo "IP OSPEDALE: "
+hostname -I | awk '{print $1}'
+echo ""
+echo "--- END ---"
