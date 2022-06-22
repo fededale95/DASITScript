@@ -16,7 +16,7 @@ echo "     ETH 2/4 failover  "
 echo "     IP: 192.168.2.19"
 echo ""
 echo "---  End Config ---"
-curl -OL https://raw.githubusercontent.com/fededale95/DASITScript/main/interfaces
+wget https://raw.githubusercontent.com/fededale95/DASITScript/main/interfaces
 mv interfaces interfaces_test
 mv interfaces_test /etc/network
 #ifup -a
