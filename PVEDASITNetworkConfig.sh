@@ -6,16 +6,16 @@
 curl -OL https://raw.githubusercontent.com/fededale95/DASITScript/main/interfaces
 
 #Sposto il file nella cartella di sistema
-#mv interfaces /etc/network
+mv interfaces /etc/network
 mv interfaces /root/testFolder/ #test 
 
 #Riavvio le interfacce e il servizio di Rete
-#ifup -a
-#systemctl restart networking
+ifup -a
+systemctl restart networking
 
 #Mostro a schermo IP della macchina
 echo "IP PROXMOX: "
 hostname -I | awk '{print $1}'
 
 #Riavvio
-#reboot
+reboot
