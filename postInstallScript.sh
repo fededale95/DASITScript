@@ -1,5 +1,5 @@
 #!/bin/sh
-
+export TERM=linux
 if [ `pveversion | grep "pve-manager/7" | wc -l` -ne 1 ]; then
         echo -e "This script requires Proxmox Virtual Environment 7.0 or greater"
         echo -e "Exiting..."
