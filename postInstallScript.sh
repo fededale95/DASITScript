@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -ex
+#!/bin/sh
 set -euo pipefail
 shopt -s inherit_errexit nullglob
 
