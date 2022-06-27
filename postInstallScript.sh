@@ -6,7 +6,7 @@ if [ `pveversion | grep "pve-manager/7" | wc -l` -ne 1 ]; then
         sleep 2
         exit
 fi
-   
+      
 clear
 
 sleep 2
