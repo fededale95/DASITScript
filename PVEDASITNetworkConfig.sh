@@ -7,7 +7,6 @@ curl -OL https://raw.githubusercontent.com/fededale95/DASITScript/main/interface
 
 #Sposto il file nella cartella di sistema
 mv interfaces /etc/network
-mv interfaces /root/testFolder/ #test 
 
 #Riavvio le interfacce e il servizio di Rete
 ifup -a
