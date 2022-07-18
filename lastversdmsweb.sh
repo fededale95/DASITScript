@@ -1,6 +1,0 @@
-#!/bin/bash
-ls -lt /share/CONSULENTI/DMSWEB | grep dmsweb-x64 >> vers.txt
-cut vers.txt -c 67-72 >> lastVers.txt
-sed -n '1p' lastVers.txt >> lastDMSWeb.txt
-rm vers.txt
-rm lastVers.txt
